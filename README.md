@@ -52,7 +52,7 @@ Session artifacts are saved as JSON to `memory/sessions/`. A longitudinal layer 
 
 | Engine | Config | Notes |
 |--------|--------|-------|
-| Ollama (local) | `OLLAMA_ENDPOINT`, `OLLAMA_MODEL` in `.env` | Default: `http://adambalm:11434/api/generate`, `qwen2.5-coder` |
+| Ollama (local) | `OLLAMA_ENDPOINT`, `OLLAMA_MODEL` in `.env` | Default: `http://localhost:11434/api/generate`, `qwen2.5-coder` |
 | Anthropic | `ANTHROPIC_API_KEY` in `.env` | Claude 3.5 Haiku. ~$0.006/session |
 
 Set the engine per-capture in the extension popup, or change `DEFAULT_ENGINE` in `classifier.js`.
