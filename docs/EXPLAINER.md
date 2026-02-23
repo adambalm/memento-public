@@ -135,7 +135,7 @@ The four-pass classification pipeline, the correction-to-learning loop, and the 
 
 **Stack:** Node.js, Express, Chrome Manifest V3, Anthropic Claude 3.5 Haiku, Ollama (Qwen 2.5 Coder, Llama 3.2), RTX 5060 Ti 16GB, Tailscale, MCP protocol, Basic Memory (Obsidian-backed), JSON session artifacts on disk.
 
-**Source:** [github.com/adambalm/memento](https://github.com/adambalm/memento)
+**Source:** [github.com/adambalm/memento-public](https://github.com/adambalm/memento-public)
 
 ---
 
