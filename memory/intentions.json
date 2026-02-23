@@ -1,0 +1,344 @@
+{
+  "feedback": [
+    {
+      "tabHash": "2122c5656da3",
+      "url": "https://mail.google.com/mail/u/0/#inbox",
+      "title": "Inbox (132) - ed.oconnell@springfieldca.org - Springfield Commonwealth Academy Mail",
+      "candidateIntent": "You may want to follow up on mail.google.com — it keeps appearing alongside your Education tabs",
+      "action": "correct",
+      "correctedIntent": "Mail is not a signal in and of itself.  It may need to be treated as a seperate object type in the future, but for the purposes of these sessions, it carries no deep signal",
+      "at": "2026-02-17T07:36:03.290Z"
+    },
+    {
+      "tabHash": "8a54a91177df",
+      "url": "https://en.wikipedia.org/wiki/Pierre_Menard,_Author_of_the_Quixote",
+      "title": "Pierre Menard, Author of the Quixote - Wikipedia",
+      "candidateIntent": "You may want to deep-dive into en.wikipedia.org — it keeps appearing alongside your Research: Multi-Agent Systems tabs",
+      "action": "correct",
+      "correctedIntent": "This is related to PREY/Null Provenance.  It is the inspriation for the idea that a canonical work, such as Quixote or Hamlet, could be of a different signifance or even qualitatively better than the \"original\" if produced in a different context by a naive author, as the LLM that writes Hamlet does in Dave as Prey",
+      "at": "2026-02-17T07:49:43.814Z"
+    },
+    {
+      "tabHash": "bd0501083c7c",
+      "url": "https://www.springfieldcommonwealthacademy.org/",
+      "title": "SCA Home Page",
+      "candidateIntent": "You may want to follow up on springfieldcommonwealthacademy.org — it keeps appearing alongside your Communication tabs",
+      "action": "dismiss",
+      "correctedIntent": null,
+      "at": "2026-02-17T07:50:02.371Z"
+    },
+    {
+      "tabHash": "b8e1ea745af5",
+      "url": "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+      "title": "Google News",
+      "candidateIntent": "You may want to deep-dive into news.google.com — it keeps appearing alongside your Research: Multi-Agent Systems tabs",
+      "action": "dismiss",
+      "correctedIntent": null,
+      "at": "2026-02-17T07:50:05.763Z"
+    },
+    {
+      "tabHash": "75d246c61103",
+      "url": "https://adambalm.github.io/lab/aicred/",
+      "title": "AI CRED Dashboard",
+      "candidateIntent": "You may want to deep-dive into adambalm.github.io — it keeps appearing alongside your Research: Multi-Agent Systems tabs",
+      "action": "correct",
+      "correctedIntent": "I want to strengthen this signal.  It may not recur that often but it is imporant as it is a current marker for professional competence",
+      "at": "2026-02-17T07:51:41.396Z"
+    },
+    {
+      "tabHash": "e3d3bdcff16e",
+      "url": "https://cloud.google.com/blog/topics/developers-practitioners/a-methodical-approach-to-agent-evaluation",
+      "title": "A methodical approach to agent evaluation | Google Cloud Blog",
+      "candidateIntent": "You may want to study cloud.google.com — it keeps appearing alongside your Academic (Synthesis) tabs",
+      "action": "correct",
+      "correctedIntent": "The creation of effective evals for Agents is of interest to me.   This relates",
+      "at": "2026-02-17T07:52:29.152Z"
+    },
+    {
+      "tabHash": "083dd1a01de5",
+      "url": "https://medium.com/google-cloud/unlocking-healthcare-innovation-integrating-google-cloud-healthcare-api-with-mcp-toolbox-and-adk-9d9ba5bc8f14",
+      "title": "Unlocking Healthcare Innovation: Integrating Google Cloud Healthcare API with MCP Toolbox and ADK | by MCP Toolbox for Databases | Google Cloud - Community | Nov, 2025 | Medium",
+      "candidateIntent": "You may want to deep-dive into medium.com — it keeps appearing alongside your Research: Multi-Agent Systems tabs",
+      "action": "correct",
+      "correctedIntent": "This connects to the idea of AI in Health Care as a hard problem, since it involves such strict compliance",
+      "at": "2026-02-17T07:53:31.635Z"
+    },
+    {
+      "tabHash": "2837bdf65db7",
+      "url": "https://arxiv.org/pdf/2504.19413",
+      "title": "2504.19413",
+      "candidateIntent": "You may want to deep-dive into arxiv.org — it keeps appearing alongside your Research: Multi-Agent Systems tabs",
+      "action": "correct",
+      "correctedIntent": "The title here means nothing.  if that is being used for classification, we need to use a pattern that does a secnod pass, like our pdf extrator. arxiv.org papers are almost always at least interesting to me, but their titles are  low signal",
+      "at": "2026-02-17T07:55:26.502Z"
+    },
+    {
+      "tabHash": "e29b11fe2c37",
+      "url": "https://cloud.google.com/blog/topics/developers-practitioners/integrating-medgemma-into-clinical-workflows-just-got-easier",
+      "title": "Integrating MedGemma into clinical workflows just got easier! | Google Cloud Blog",
+      "candidateIntent": "You may want to deep-dive into cloud.google.com — it keeps appearing alongside your Research tabs",
+      "action": "correct",
+      "correctedIntent": "Relates to both Google AI ecosystem, and to AI in healthcare",
+      "at": "2026-02-17T07:56:05.240Z"
+    },
+    {
+      "tabHash": "a7296a31122e",
+      "url": "https://docs.google.com/document/d/1o13c-4kZRt2VRicbTZ8nec49yDMWdWxzjCe7dRMcwgc/edit?tab=t.0#heading=h.6dwnqadkepx6",
+      "title": "Ed O'Connell -- AI Enabled Content Management - Google Docs",
+      "candidateIntent": "You may want to deep-dive into docs.google.com — it keeps appearing alongside your Research: Multi-Agent Systems tabs",
+      "action": "correct",
+      "correctedIntent": "Generally, if it starts with Ed O'Connell it is likley material for resume or personal website",
+      "at": "2026-02-17T07:56:40.857Z"
+    },
+    {
+      "tabHash": "458e87a32cd7",
+      "url": "https://varnelis.net/works_and_projects/the-rise-and-fall-of-the-author/",
+      "title": "The Rise and Fall of the Author - varnelis.net",
+      "candidateIntent": "You may want to deep-dive into varnelis.net — it keeps appearing alongside your Research: Multi-Agent Systems tabs",
+      "action": "correct",
+      "correctedIntent": "This relates directly to the PREY/Null Provenance ideas.  It explicitly discusses Pierre Menard by Borges, which is inspiration for teh null provenance axis of that story",
+      "at": "2026-02-17T08:02:58.293Z"
+    },
+    {
+      "tabHash": "fdedb8a45207",
+      "url": "https://manus.im/app/UeTfyEkAYRn8OAGWIFc6DQ",
+      "title": "Elite New England Prep School Marketing Website Design - Manus",
+      "candidateIntent": "You may want to deep-dive into manus.im — it keeps appearing alongside your Research tabs",
+      "action": "correct",
+      "correctedIntent": "This one should have been obvious.  Maybe we need deeper hooks into basic memory?",
+      "at": "2026-02-18T01:43:16.718Z"
+    },
+    {
+      "tabHash": "acb0163af34a",
+      "url": "https://www.poetryfoundation.org/poets/emily-dickinson",
+      "title": "Emily Dickinson | The Poetry Foundation",
+      "candidateIntent": "You may want to deep-dive into poetryfoundation.org — it keeps appearing alongside your Research: Multi-Agent Systems tabs",
+      "action": "correct",
+      "correctedIntent": "This one also ought to be obvious.  Emily Dickenson is a major figure in a novel I have been open about wanting to write, connected with Ada Lovelace, my own graduate school years, and Yeat's gyres.",
+      "at": "2026-02-18T01:44:22.679Z"
+    },
+    {
+      "tabHash": "a05a4d27d0c1",
+      "url": "https://www.linkedin.com/company/ra-capital-management-llc/life/75c87bb9-c68a-43b4-9f1c-e7dd316f90c9/",
+      "title": "(5) RA Capital Management: Life | LinkedIn",
+      "candidateIntent": "You may want to deep-dive into linkedin.com — it keeps appearing alongside your Research: Multi-Agent Systems tabs",
+      "action": "dismiss",
+      "correctedIntent": null,
+      "at": "2026-02-18T01:44:31.192Z"
+    },
+    {
+      "tabHash": "b41ad89650a3",
+      "url": "https://www.emergentmind.com/topics/multi-agent-debate-mad-strategies",
+      "title": "Multi-Agent Debate Strategies",
+      "candidateIntent": "You may want to deep-dive into emergentmind.com — it keeps appearing alongside your Research: Multi-Agent Systems tabs",
+      "action": "correct",
+      "correctedIntent": "Multi Agent debate connects explicity with Skill Forge",
+      "at": "2026-02-18T01:45:17.643Z"
+    },
+    {
+      "tabHash": "7b5b4872b42b",
+      "url": "https://chuniversiteit.nl/papers/prompt-patterns-for-software-design#:~:text=Data%2Dguided%20refactoring,or%20more%20examples%20of%20X",
+      "title": "Prompt patterns for LLMs that help you design better software | Chuniversiteit",
+      "candidateIntent": "You may want to deep-dive into chuniversiteit.nl — it keeps appearing alongside your Research: Multi-Agent Systems tabs",
+      "action": "correct",
+      "correctedIntent": "These analysis in general are too shallow.  it says nothing to a human being to just say you may want to deep dive into . . . and then just list the tab.  No offense, but no duh.  I am looking for actualy connectins and reasonalble suspicion of garbage or noise when it is warrented.  All of your \"often appears with\" say the same thing.  How long is the longitiduinal sample?   Prompt patterns or agent design patterns are signals of me gathering information on methods to improve my work in general, as I work with prompts and llms all of the time",
+      "at": "2026-02-18T01:46:45.396Z"
+    },
+    {
+      "tabHash": "b34a15683178",
+      "url": "https://chatgpt.com/c/69445383-0dc0-832b-9c78-f30ec448bc41",
+      "title": "Valuable insights from transcript",
+      "candidateIntent": "You may want to deep-dive into chatgpt.com — it keeps appearing alongside your Research tabs",
+      "action": "correct",
+      "correctedIntent": "When a tab is a converation with an LLM that was left open, it likely signals that that particular discussion has ideas in it that I consider valuabe.  But just telling me, maybe you should look deeper into chatGPT says nothing at all.  you have to get to the ideas",
+      "at": "2026-02-18T01:48:01.000Z"
+    },
+    {
+      "tabHash": "69aea1d3054e",
+      "url": "https://stackoverflow.com/page-1",
+      "title": "Test Page 1 - stackoverflow.com",
+      "candidateIntent": "You may want to integrate or apply stackoverflow.com — it keeps appearing alongside your Development tabs",
+      "action": "dismiss",
+      "correctedIntent": null,
+      "at": "2026-02-18T01:48:13.765Z"
+    },
+    {
+      "tabHash": "9ede4dc3d2bd",
+      "url": "https://docs.google.com/document/d/1RlSpzvYjPgrbvtcqjtmvZCI176Agchx4aOKqkyz6Z_Q/edit?tab=t.0",
+      "title": "Untitled document - Google Docs",
+      "candidateIntent": "You may want to deep-dive into docs.google.com — it keeps appearing alongside your Research: Multi-Agent Systems tabs",
+      "action": "dismiss",
+      "correctedIntent": null,
+      "at": "2026-02-18T01:48:44.076Z"
+    },
+    {
+      "tabHash": "9ede4dc3d2bd",
+      "url": "https://docs.google.com/document/d/1RlSpzvYjPgrbvtcqjtmvZCI176Agchx4aOKqkyz6Z_Q/edit?tab=t.0",
+      "title": "Untitled document - Google Docs",
+      "candidateIntent": "You may want to deep-dive into docs.google.com — it keeps appearing alongside your Research: Multi-Agent Systems tabs",
+      "action": "dismiss",
+      "correctedIntent": null,
+      "at": "2026-02-18T01:48:44.178Z"
+    },
+    {
+      "tabHash": "febf9f8f2021",
+      "url": "https://github.com/page-0",
+      "title": "Test Page 0 - github.com",
+      "candidateIntent": "You may want to integrate or apply github.com — it keeps appearing alongside your Development tabs",
+      "action": "dismiss",
+      "correctedIntent": null,
+      "at": "2026-02-18T01:49:13.686Z"
+    },
+    {
+      "tabHash": "6f974d40124e",
+      "url": "https://github.com/anthropics/claude-quickstarts/tree/main/autonomous-coding",
+      "title": "claude-quickstarts/autonomous-coding at main · anthropics/claude-quickstarts",
+      "candidateIntent": "You may want to follow up on github.com — it keeps appearing alongside your Productivity tabs",
+      "action": "correct",
+      "correctedIntent": "This is very closely related to the core idea I have been struggling with since I began working with LLMs, how to persist context across context windows and other obstacles to sustained long horizon work where reasoning can sustain progress towards a goal without drift or epistemic collapse.  Very important pattern.  I am always looking to improve in this capacity.",
+      "at": "2026-02-18T01:52:22.540Z"
+    }
+  ],
+  "themeFeedback": {
+    "f600202cb725": {
+      "themeId": "f600202cb725",
+      "label": "Mcp / Healthcare / Documentation",
+      "action": "correct",
+      "correctedLabel": "AI in Regulated Domains / MCP Infrastructure",
+      "correctedIntent": "[ED-PROXY-SYNTHETIC] The label is half right but misses the actual thread. There are two separate interests mashed together here. The healthcare tabs (MedGemma, Healthcare API) connect to AI-in-healthcare as a hard problem domain -- strict compliance, HIPAA, the kind of constraints that test whether AI can really deliver in high-stakes environments. But the MCP Toolbox, Claude docs, and mem0 repo are about agent infrastructure -- how to give agents persistent memory and tool access. These are different intellectual threads that happen to share the word 'documentation.' The system is clustering on surface keyword overlap instead of following the actual reasoning chain: Healthcare = regulated domain challenge, MCP/mem0 = context persistence infrastructure. Both matter to me but for completely different reasons.",
+      "at": "2026-02-17T12:00:00.000Z",
+      "source": "ed-proxy-synthetic"
+    },
+    "c783af2255ec": {
+      "themeId": "c783af2255ec",
+      "label": "Sheets / Cognia / Notebooklm",
+      "action": "correct",
+      "correctedLabel": "Cognia Accreditation Workstream",
+      "correctedIntent": "[ED-PROXY-SYNTHETIC] This is entirely a work obligation -- Cognia accreditation for Springfield Commonwealth Academy. The Sheets are assessment workbooks and enrollment forms. NotebookLM is being used as a tool for the accreditation self-study, not as a research interest. Label should be 'Cognia Accreditation' or 'SCA Compliance Work.' Connecting it to 'Authorship & Narrative Architecture' makes zero sense -- these are spreadsheets about student attendance and enrollment. The system is matching on NotebookLM appearing in both this cluster and my research interests, but the NotebookLM usage here is purely instrumental, not intellectual.",
+      "at": "2026-02-17T12:01:00.000Z",
+      "source": "ed-proxy-synthetic"
+    },
+    "6bc82ac32e5b": {
+      "themeId": "6bc82ac32e5b",
+      "label": "Manus / Prep / Website",
+      "action": "correct",
+      "correctedLabel": "SCA Website Redesign (Manus)",
+      "correctedIntent": "[ED-PROXY-SYNTHETIC] This is the sca-website project, specifically exploring whether Manus can generate a usable design for the school marketing site. The prep basketball tab is tangential -- it appeared in the same session because I was also looking at school positioning. The core thread is: can an AI agent (Manus) produce a viable website design that meets the standards of an elite prep school? This connects to my professional work, not to agent engineering in the abstract. Matching it to 'Agent Engineering' is technically true but misleading -- I am not studying Manus as an agent architecture, I am USING it as a tool for my actual job.",
+      "at": "2026-02-17T12:02:00.000Z",
+      "source": "ed-proxy-synthetic"
+    },
+    "aeb7c962973c": {
+      "themeId": "aeb7c962973c",
+      "label": "Workspace / Admin / Flow",
+      "action": "correct",
+      "correctedLabel": "Google Workspace Admin (Google Flow Debugging)",
+      "correctedIntent": "[ED-PROXY-SYNTHETIC] This is a specific operational task that got way too many tabs -- I was trying to enable Google Flow (their video creation tool) for our student accounts in Google Workspace for Education. It was a frustrating admin console rabbit hole. Most of these tabs are support articles for the same problem. This is pure IT administration work, not research. The 'Authorship & Narrative Architecture' connection is laughable -- I was literally reading Google support docs about turning on a video app for students. If the system could detect that 10 of these 16 tabs are from support.google.com all about the same issue, it should collapse this to 'Workspace admin task: enabling Flow' and move on.",
+      "at": "2026-02-17T12:03:00.000Z",
+      "source": "ed-proxy-synthetic"
+    },
+    "517502f376f6": {
+      "themeId": "517502f376f6",
+      "label": "Search / Cursor",
+      "action": "correct",
+      "correctedLabel": null,
+      "correctedIntent": "[ED-PROXY-SYNTHETIC] This is not a theme. This is a garbage cluster. 'Use plastic bags with boots in snow' is in here alongside 'what is Jakob's law.' Google Search tabs are navigational artifacts, not intellectual signals. The cursor tab is a real signal -- I use Cursor as my IDE and am interested in its evolution -- but it does not belong with random Google searches for Amazon and Anthropic credit checks. The system should treat google.com search tabs as low-signal navigational noise unless the search query itself reveals a pattern. 'My terminal in cursor is frozen' is a momentary frustration, not a research thread.",
+      "at": "2026-02-17T12:04:00.000Z",
+      "source": "ed-proxy-synthetic"
+    },
+    "1682d65fb150": {
+      "themeId": "1682d65fb150",
+      "label": "News",
+      "action": "dismiss",
+      "correctedLabel": null,
+      "correctedIntent": "[ED-PROXY-SYNTHETIC] News tabs are ambient. Everyone has Google News and Hacker News open. The SCA news page is a work artifact. This is not a theme, it is digital wallpaper. Dismiss.",
+      "at": "2026-02-17T12:05:00.000Z",
+      "source": "ed-proxy-synthetic"
+    },
+    "4897a5e71f7d": {
+      "themeId": "4897a5e71f7d",
+      "label": "Test / Example / Visionagents",
+      "action": "correct",
+      "correctedLabel": null,
+      "correctedIntent": "[ED-PROXY-SYNTHETIC] This cluster has test fixture data mixed with a real signal. 'Test Page 0 - github.com' and 'Test Page 1 - stackoverflow.com' are test fixtures from Memento's own test suite, not real browsing data. The Vision-Agents example is a genuine research tab about agentic architectures for computer vision. But clustering it with test data makes the whole thing nonsensical. The system needs to detect and filter out its own test fixtures. If a URL pattern matches 'Test Page N' or contains '/page-0', '/page-1', it is almost certainly synthetic.",
+      "at": "2026-02-17T12:06:00.000Z",
+      "source": "ed-proxy-synthetic"
+    },
+    "a3e2aaf3d7ed": {
+      "themeId": "a3e2aaf3d7ed",
+      "label": "Education / Gemini / Chrome",
+      "action": "correct",
+      "correctedLabel": "AI in K-12 Education (Professional)",
+      "correctedIntent": "[ED-PROXY-SYNTHETIC] Two separate threads here that actually do relate. The Gemini tabs are about deploying AI tools in a K-12 school setting -- this is my professional work at SCA. The Gradelink logout URL is just noise (an auto-redirect). But the 100+ ways to use Gemini in Education slides and the Google for Education specialist pages are part of evaluating how to bring AI into the school responsibly. This is adjacent to the AI-in-regulated-domains interest but the regulation here is COPPA and FERPA rather than HIPAA. The label should focus on the actual work: bringing AI tools to a K-12 environment.",
+      "at": "2026-02-17T12:07:00.000Z",
+      "source": "ed-proxy-synthetic"
+    },
+    "849227758310": {
+      "themeId": "849227758310",
+      "label": "Sanity / Better",
+      "action": "correct",
+      "correctedLabel": "Agent Engineering Craft / SCA Website Tooling",
+      "correctedIntent": "[ED-PROXY-SYNTHETIC] Another mash-up of two distinct things. The Sanity tabs (pricing, GROQ cheat sheet, courses) are about the CMS I use for sca-website -- this is practical tooling for my day job. The chuniversiteit.nl prompt patterns page is about something completely different: it is about improving my craft as someone who designs prompts and works with LLMs every day. These are separate interests that share no intellectual thread. If the system could distinguish between 'tools I use for work' (Sanity) and 'methods I study to improve my practice' (prompt patterns), that would be a meaningful distinction.",
+      "at": "2026-02-17T12:08:00.000Z",
+      "source": "ed-proxy-synthetic"
+    },
+    "588ba3d9e271": {
+      "themeId": "588ba3d9e271",
+      "label": "Gradelink / Search",
+      "action": "correct",
+      "correctedLabel": "SCA Operations (Gradelink SIS)",
+      "correctedIntent": "[ED-PROXY-SYNTHETIC] This is straight operational IT work. Gradelink is the student information system for SCA. Email log search and Cloudflare analytics are also operational. The LinkedIn job search tab got pulled in by co-occurrence which makes no sense. This whole cluster is 'school IT admin tasks' -- not interesting from a research or intellectual standpoint, just work I have to do. The system should learn that gradelink.com and admin.google.com when they appear together signal operational work, not research.",
+      "at": "2026-02-17T12:09:00.000Z",
+      "source": "ed-proxy-synthetic"
+    },
+    "7811bd45bcc1": {
+      "themeId": "7811bd45bcc1",
+      "label": "Claude / Psychometric / Social",
+      "action": "correct",
+      "correctedLabel": "AI Personality & Evaluation / PREY Subthread",
+      "correctedIntent": "[ED-PROXY-SYNTHETIC] Now this is getting closer to something real. The psychometric papers from Nature and Frontiers are genuinely interesting to me -- they connect to both agent evaluation (can we measure AI personality traits?) and to the PREY/Null Provenance ideas about what it means for an AI to have a 'character.' The AI CRED tabs are about my professional competence framework. Claude and Basic Memory tabs are tools I use. The system correctly identified a thread here but gave it a terrible label. 'Claude / Psychometric / Social' says nothing. The real thread is: can we evaluate AI agents the way we evaluate humans, and what does that imply about authorship and identity? That connects directly to PREY.",
+      "at": "2026-02-17T12:10:00.000Z",
+      "source": "ed-proxy-synthetic"
+    },
+    "7fa1635c5d32": {
+      "themeId": "7fa1635c5d32",
+      "label": "Management",
+      "action": "correct",
+      "correctedLabel": "Professional Identity Materials",
+      "correctedIntent": "[ED-PROXY-SYNTHETIC] The Ed O'Connell doc is resume material. The RA Capital Management LinkedIn page is probably noise -- a company page I landed on during a browsing session, not an active interest. Only 2 tabs in this cluster and one of them is noise. The system correctly picked up the Ed O'Connell = resume pattern from my earlier correction, but 'Management' as a label is meaningless. If this cluster is going to exist at all it should be 'Resume & Professional Identity' and it should absorb the portfolio/artifacts cluster below too.",
+      "at": "2026-02-17T12:11:00.000Z",
+      "source": "ed-proxy-synthetic"
+    },
+    "68da42dc8eae": {
+      "themeId": "68da42dc8eae",
+      "label": "Aicred / Static / Site",
+      "action": "correct",
+      "correctedLabel": "AI CRED Dashboard Deployment",
+      "correctedIntent": "[ED-PROXY-SYNTHETIC] This is all deployment infrastructure for the AI CRED Dashboard -- Render hosting, GitHub deployments, the lab repo. This is a specific project artifact, not a research theme. The system should recognize that when 5 of 7 tabs are dashboard.render.com for the same site, this is a deployment/devops activity, not an intellectual pursuit. It matters because AI CRED is a marker of professional competence, but the interesting question is what goes INTO the dashboard, not the mechanics of deploying it.",
+      "at": "2026-02-17T12:12:00.000Z",
+      "source": "ed-proxy-synthetic"
+    },
+    "9795d0c84b81": {
+      "themeId": "9795d0c84b81",
+      "label": "Notebooklm / Research",
+      "action": "correct",
+      "correctedLabel": "NotebookLM as Knowledge Infrastructure",
+      "correctedIntent": "[ED-PROXY-SYNTHETIC] NotebookLM is a key integration target for Memento -- this was explicitly called out in the project docs as the 'Integration North Star.' These tabs represent me USING NotebookLM for serious knowledge work (contextual memory intelligence, AI integration ethics in education) and also evaluating it as a tool. The 'Bloom Pipeline Viewer' from Claude is related -- it is research data visualization, another knowledge tool. The system should know that NotebookLM is not just another app I use -- it is a central piece of how I want to manage knowledge across all my projects. This cluster should have high signal weight.",
+      "at": "2026-02-17T12:13:00.000Z",
+      "source": "ed-proxy-synthetic"
+    },
+    "d6ccdd30cf3b": {
+      "themeId": "d6ccdd30cf3b",
+      "label": "Connell / Portfolio / Artifacts",
+      "action": "correct",
+      "correctedLabel": "Portfolio Site (edoconnell.org)",
+      "correctedIntent": "[ED-PROXY-SYNTHETIC] This is the portfolio site project -- edoconnell.org, deployed to multiple places (Vercel, GitHub Pages, localhost for dev). 7 of 9 tabs are the SAME page at different URLs, which means this is a deployment verification activity, not 'research.' The system should deduplicate tabs that resolve to the same content across domains. The LinkedIn profile tab is related -- professional identity. But calling this 'Connell / Portfolio / Artifacts' as a theme with the intent 'ongoing research' is wrong. I am not researching my own portfolio. I am building and deploying it. Activity type matters.",
+      "at": "2026-02-17T12:14:00.000Z",
+      "source": "ed-proxy-synthetic"
+    },
+    "test-id": {
+      "action": "keep-watching",
+      "correctedIntent": null,
+      "at": "2026-02-21T02:00:14.797Z"
+    }
+  }
+}

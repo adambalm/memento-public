@@ -1,0 +1,23 @@
+{
+  "rules": {
+    "mail.google.com": {
+      "signal": "noise",
+      "reason": "User stated not a signal",
+      "source": "bootstrapped",
+      "at": "2026-02-18T02:32:19.650Z"
+    },
+    "arxiv.org": {
+      "signal": "always-interesting",
+      "reason": "User indicated always interesting",
+      "source": "bootstrapped",
+      "at": "2026-02-18T02:32:19.655Z"
+    },
+    "github.com": {
+      "signal": "always-interesting",
+      "reason": "User indicated always interesting",
+      "source": "bootstrapped",
+      "at": "2026-02-18T02:32:19.655Z"
+    }
+  },
+  "bootstrapped": true
+}

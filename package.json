@@ -1,0 +1,23 @@
+{
+  "name": "memento-mvp",
+  "version": "1.0.0",
+  "description": "Browser context capture and classification MVP",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "mcp": "node backend/mcp-server.js",
+    "test:mcp": "node tests/mcp/tool-tests.js",
+    "test:e2e": "node tests/e2e/run-all.js",
+    "preflight:public": "node scripts/preflight-public.js",
+    "public:mirror": "node scripts/public-mirror.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.71.2",
+    "@modelcontextprotocol/sdk": "^1.25.1",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^4.18.2",
+    "playwright": "^1.57.0",
+    "zod": "^4.3.4"
+  }
+}

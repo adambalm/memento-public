@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memento</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      width: 320px;
+      padding: 20px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0d0d0d;
+      min-height: 200px;
+    }
+    .container {
+      text-align: center;
+    }
+    h1 {
+      color: #f5f5f5;
+      font-size: 22px;
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      color: #a0a0a0;
+      font-size: 13px;
+      margin-bottom: 20px;
+    }
+    #captureBtn {
+      background: #4a9eff;
+      color: white;
+      border: none;
+      padding: 14px 28px;
+      font-size: 15px;
+      font-weight: 600;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      width: 100%;
+    }
+    #captureBtn:hover {
+      background: #3a8eef;
+      transform: translateY(-2px);
+    }
+    #captureBtn:disabled {
+      opacity: 0.7;
+      cursor: not-allowed;
+      transform: none;
+    }
+    #status {
+      margin-top: 15px;
+      color: #a0a0a0;
+      font-size: 13px;
+      min-height: 40px;
+    }
+    .model-selector {
+      margin-top: 10px;
+    }
+    .model-selector label {
+      color: #a0a0a0;
+      font-size: 12px;
+      display: block;
+      margin-bottom: 6px;
+    }
+    #engineSelect {
+      width: 100%;
+      padding: 10px 12px;
+      font-size: 14px;
+      border: 1px solid #2a2a2a;
+      border-radius: 6px;
+      background: #1a1a1a;
+      color: #f5f5f5;
+      cursor: pointer;
+    }
+    #engineSelect:focus {
+      outline: none;
+      border-color: #4a9eff;
+    }
+    .dev-mode-toggle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+    .dev-mode-toggle input[type="checkbox"] {
+      width: 16px;
+      height: 16px;
+      cursor: pointer;
+    }
+    .dev-mode-toggle label {
+      color: #666666;
+      font-size: 12px;
+      cursor: pointer;
+    }
+    .mode-selector {
+      margin-bottom: 15px;
+    }
+    .mode-selector label {
+      color: #a0a0a0;
+      font-size: 12px;
+      display: block;
+      margin-bottom: 6px;
+    }
+    .mode-buttons {
+      display: flex;
+      gap: 8px;
+    }
+    .mode-btn {
+      flex: 1;
+      padding: 10px 12px;
+      font-size: 13px;
+      border: 2px solid #2a2a2a;
+      border-radius: 6px;
+      background: transparent;
+      color: #a0a0a0;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .mode-btn:hover {
+      border-color: #666666;
+      color: #f5f5f5;
+    }
+    .mode-btn.active {
+      background: #4a9eff;
+      border-color: #4a9eff;
+      color: white;
+      font-weight: 600;
+    }
+    .lock-warning {
+      background: rgba(255, 200, 50, 0.1);
+      border: 1px solid rgba(255, 200, 50, 0.4);
+      padding: 10px;
+      border-radius: 6px;
+      margin-bottom: 15px;
+      font-size: 12px;
+      color: #ffe066;
+    }
+    .lock-warning a {
+      color: #ffe066;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    .lock-warning a:hover {
+      color: #f5f5f5;
+    }
+    .error {
+      background: rgba(248, 113, 113, 0.15);
+      padding: 10px;
+      border-radius: 6px;
+      color: #f87171;
+    }
+    .spinner {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      border: 2px solid rgba(74, 158, 255, 0.3);
+      border-top-color: #4a9eff;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    .dashboard-link {
+      display: block;
+      color: #4a9eff;
+      font-size: 13px;
+      margin-top: 10px;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .dashboard-link:hover {
+      color: #3a8eef;
+      text-decoration: underline;
+    }
+    .stats-area {
+      color: #666666;
+      font-size: 12px;
+      margin-top: 8px;
+      text-align: center;
+    }
+    .dev-separator {
+      border-top: 1px solid #2a2a2a;
+      margin: 15px 0 10px;
+      padding-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Memento</h1>
+    <p class="subtitle">Capture & classify your browsing session</p>
+
+    <div id="lockWarning" class="lock-warning" style="display: none;">
+      &#9888; <span id="lockMessage">Unresolved session</span>
+      <br><a id="lockLink" href="#">Open Launchpad &rarr;</a>
+    </div>
+
+    <div class="mode-selector">
+      <label>Output Mode</label>
+      <div class="mode-buttons">
+        <button class="mode-btn active" data-mode="results">Results</button>
+        <button class="mode-btn" data-mode="launchpad">Launchpad</button>
+      </div>
+    </div>
+
+    <button id="captureBtn">Capture Session</button>
+
+    <a id="dashboardLink" class="dashboard-link" href="#">Open Dashboard</a>
+    <div id="statsArea" class="stats-area" style="display: none;"></div>
+
+    <div id="status"></div>
+
+    <div class="dev-separator">
+      <div class="dev-mode-toggle">
+        <input type="checkbox" id="devModeCheckbox" />
+        <label for="devModeCheckbox">Developer Mode</label>
+      </div>
+      <div class="model-selector" id="engineSection" style="display: none;">
+        <label for="engineSelect">Model</label>
+        <select id="engineSelect">
+          <option value="ollama-local">Ollama (local)</option>
+          <option value="anthropic">Claude (Anthropic)</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

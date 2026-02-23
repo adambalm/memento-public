@@ -1,0 +1,41 @@
+{
+  "domains": {
+    "arxiv.org": {
+      "selectors": [
+        "meta[name=\"citation_abstract\"]",
+        "meta[name=\"citation_title\"]",
+        "meta[name=\"citation_author\"]"
+      ],
+      "expectedCategory": "Academic",
+      "notes": "Academic preprints - use citation metadata"
+    },
+    "scholar.google.com": {
+      "selectors": [
+        ".gs_rs",
+        ".gs_rt"
+      ],
+      "expectedCategory": "Academic",
+      "notes": "Google Scholar search results"
+    },
+    "github.com": {
+      "selectors": [
+        "meta[name=\"description\"]",
+        ".f4.my-3",
+        ".repository-content"
+      ],
+      "expectedCategory": null,
+      "notes": "Repositories - check for README content"
+    },
+    "medium.com": {
+      "selectors": [
+        "meta[name=\"description\"]",
+        "article h1",
+        "article section"
+      ],
+      "expectedCategory": null,
+      "notes": "Articles - paywall may limit extraction"
+    }
+  },
+  "version": "1.0.0",
+  "lastUpdated": "2026-01-15T00:00:00.000Z"
+}

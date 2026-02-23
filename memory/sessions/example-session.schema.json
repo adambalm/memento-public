@@ -1,0 +1,84 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$comment": "Example session structure - actual sessions are gitignored for privacy",
+  "type": "object",
+  "properties": {
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 timestamp when session was captured"
+    },
+    "totalTabs": {
+      "type": "integer",
+      "description": "Number of tabs captured"
+    },
+    "classifiedCount": {
+      "type": "integer",
+      "description": "Number of tabs successfully classified"
+    },
+    "narrative": {
+      "type": "string",
+      "description": "LLM-generated narrative describing the browsing session"
+    },
+    "sessionIntent": {
+      "type": "string",
+      "description": "LLM-inferred user intent for this session"
+    },
+    "groups": {
+      "type": "object",
+      "description": "Tabs organized by category",
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "tabIndex": { "type": "integer" },
+            "title": { "type": "string" },
+            "url": { "type": "string", "format": "uri" }
+          }
+        }
+      }
+    },
+    "thematicAnalysis": {
+      "type": "object",
+      "description": "Pass 4 output: cross-category themes and actions",
+      "properties": {
+        "alternativeNarrative": { "type": "string" },
+        "sessionPattern": {
+          "type": "object",
+          "properties": {
+            "type": { "type": "string" },
+            "intakePercentage": { "type": "integer" },
+            "outputPercentage": { "type": "integer" },
+            "riskFlags": { "type": "array", "items": { "type": "string" } },
+            "recommendation": { "type": "string" }
+          }
+        },
+        "suggestedActions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "priority": { "type": "string", "enum": ["high", "medium", "low"] },
+              "action": { "type": "string" },
+              "project": { "type": "string" },
+              "reason": { "type": "string" },
+              "closeAfter": { "type": "array", "items": { "type": "integer" } }
+            }
+          }
+        }
+      }
+    },
+    "meta": {
+      "type": "object",
+      "description": "Provenance metadata",
+      "properties": {
+        "schemaVersion": { "type": "string" },
+        "engine": { "type": "string" },
+        "model": { "type": "string" },
+        "endpoint": { "type": "string" }
+      }
+    }
+  },
+  "required": ["timestamp", "totalTabs", "groups", "meta"]
+}
