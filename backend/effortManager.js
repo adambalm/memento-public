@@ -9,6 +9,7 @@
 
 const fs = require('fs').promises;
 const path = require('path');
+const { resolveSessionPath } = require('./sessionPath');
 const { appendBatchDisposition } = require('./dispositions');
 
 const MEMORY_DIR = path.join(__dirname, '..', 'memory', 'sessions');
@@ -17,7 +18,7 @@ const MEMORY_DIR = path.join(__dirname, '..', 'memory', 'sessions');
  * Get the file path for a session
  */
 function sessionPath(sessionId) {
-  return path.join(MEMORY_DIR, `${sessionId}.json`);
+  return resolveSessionPath(MEMORY_DIR, sessionId);
 }
 
 /**

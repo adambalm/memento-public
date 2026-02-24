@@ -11,6 +11,7 @@
 
 const fs = require('fs').promises;
 const path = require('path');
+const { resolveSessionPath } = require('./sessionPath');
 
 const MEMORY_DIR = path.join(__dirname, '..', 'memory', 'sessions');
 
@@ -23,7 +24,7 @@ const VALID_ACTIONS = ['trash', 'complete', 'regroup', 'reprioritize', 'promote'
  * Get the file path for a session
  */
 function sessionPath(sessionId) {
-  return path.join(MEMORY_DIR, `${sessionId}.json`);
+  return resolveSessionPath(MEMORY_DIR, sessionId);
 }
 
 /**

@@ -1,5 +1,6 @@
 const fs = require('fs').promises;
 const path = require('path');
+const { resolveSessionPath } = require('./sessionPath');
 
 const MEMORY_DIR = path.join(__dirname, '..', 'memory', 'sessions');
 
@@ -87,7 +88,7 @@ async function listSessions() {
  */
 async function readSession(id) {
   try {
-    const filepath = path.join(MEMORY_DIR, `${id}.json`);
+    const filepath = resolveSessionPath(MEMORY_DIR, id);
     const content = await fs.readFile(filepath, 'utf-8');
     return JSON.parse(content);
   } catch (error) {
